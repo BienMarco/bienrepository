@@ -18,3 +18,10 @@ h1{
 p{
     color:rgb(71, 71, 71);
 }
+.brent{
+    border: outset 5px chocolate;
+    background-color: magenta;
+}
+.brent p{
+    color: darkgreen;  
+}
