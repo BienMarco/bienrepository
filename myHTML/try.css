@@ -25,3 +25,7 @@ p{
 .brent p{
     color: darkgreen;  
 }
+.ziegler {
+    background-color: rgb(200, 155, 241);
+    border: solid black 3px;
+}
