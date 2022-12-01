@@ -1,0 +1,161 @@
+body{
+    background-image: url(images/web.jpg);
+    background-size: cover;
+}
+h2{
+    color:white;
+    border: 3px solid pink;
+    background-image: linear-gradient( to left,rgb(253, 253, 170), rgb(233, 93, 93));
+}
+.header{
+    background-image: url(images/tech.jpg);
+    padding: 1px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.topnav{
+    overflow: hidden;
+    background-image: url(images/electric.jpg);
+    background-size: cover;
+    margin-bottom: 5px;
+}
+.topnav a{
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* Change color on hover */
+.topnav a:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.search{
+    margin-top: 8px;
+    margin-right: 5px;
+    padding: 5px;
+    float: right;
+}
+/*Transforms*/
+.advance{
+    border: 2px solid blue;
+    display: inline-block;
+    width: 300px;
+}
+.transform{
+    width: 250px;
+    height: 100px;
+    border: 2px solid;
+    color: white;
+    transform: translate(10px,20px);/*method moves an element from its current position*/
+}
+.rotates{
+    margin-left: 20px;
+    width: 200px;
+    height: 100px;
+    color: white;
+    border: 2px solid;
+    transform: rotate(20deg);/* method rotates an element clockwise or counter-clockwise according to a given degree*/
+}
+.scales{
+    margin-left: 120px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color:white;
+    width: 100px;
+    height: 50px;
+    border: 2px solid;
+    transform: scalex(2);/*method increases or decreases the size of an element*/
+}
+.skews{
+    color:white;
+    margin-left: 15px;
+    width: 200px;
+    height: 100px;
+    border: 2px solid;
+    transform: skewy(20deg);/*method skews an element along the X-axis by the given angle*/
+}
+    /*Transitions*/
+.transitions{
+    background-image: url(images/code.jpg);
+    border-radius: 20px;
+    background-size: cover;
+    border: 3px solid;
+    float:left;
+    margin-right: 10px;
+    width: 500px;
+    height: 400px;
+}
+.trans{
+    width: 50px;
+    height: 50px;
+    color: red;
+    margin-top: 20px;
+    background-image: linear-gradient(rgb(100, 255, 100), yellow);
+    transition: width 3s;
+    transition-delay: 0.51s;
+    border: 2px solid pink;
+}
+div.trans:hover{
+    width: 200px;
+}  
+    /*Animations*/
+.animations{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    background-image: url(images/smile.png);
+    position: relative;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: 10;
+}
+@keyframes example{
+    0%   {background-image: url(images/smile.png); left:0px; top:0px;}
+    25%  {background-image: url(images/sad.png); left:200px; top:0px;}
+    50%  {background-image: url(images/cry.png); left:200px; top:200px;}
+    75%  {background-image: url(images/shade.png); left:0px; top:200px;}
+    100% {background-image: url(images/smile.png); left:0px; top:0px;}
+}
+    /*Tooltip*/
+.tooltip{
+    margin-top: 20px;
+    position:relative;
+    display: inline-block;
+    border: 3px solid green;
+    border-radius: 20px;
+    background-color: white;
+}
+.tooltip .tooltiptext{
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(110, 110, 110);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+}
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+    opacity: 1;
+}
+/*Object-Fit*/
+img{
+    object-fit: scale-down;
+    object-position: 10% 100%;
+}
+img:hover{
+    transform: scaleX(-1);
+    -webkit-box-reflect: left;
+}
